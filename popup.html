@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>GS-Leads Local Status</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+<div class="popup">
+
+    <div class="header">
+        <div class="title">GS-Leads</div>
+        <div class="subtitle">Local Status</div>
+    </div>
+
+    <div class="tabs">
+
+        <button
+            class="tab active"
+            data-tab="graphics"
+        >
+            Графика
+        </button>
+
+        <button
+            class="tab"
+            data-tab="statuses"
+        >
+            Статусы
+        </button>
+
+        <button
+            class="tab"
+            data-tab="settings"
+        >
+            Настройки
+        </button>
+
+    </div>
+
+    <div class="content">
+
+        <div
+            class="tab-content active"
+            id="graphics"
+        ></div>
+
+        <div
+            class="tab-content"
+            id="statuses"
+        ></div>
+
+        <div
+            class="tab-content"
+            id="settings"
+        ></div>
+
+    </div>
+
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>

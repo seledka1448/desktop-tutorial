@@ -1,0 +1,470 @@
+.gs-local-status-separator{
+padding:8px 12px;
+font-size:11px;
+font-weight:600;
+color:#777;
+background:#f7f7f7;
+border:1px solid #ddd;
+pointer-events:none
+}
+
+/* =========================================================
+ТАБЛИЦА — 50% ШИРИНЫ
+========================================================= */
+
+.p-datatable table#pn_id_54-table{
+width:50%!important;
+min-width:50%!important;
+max-width:50%!important;
+margin:0!important;
+padding:0!important;
+border-collapse:collapse!important;
+border-spacing:0!important;
+table-layout:auto!important
+}
+
+/* =========================================================
+СТРОКИ
+========================================================= */
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row{
+height:auto!important;
+margin:0!important;
+padding:0!important
+}
+
+/* =========================================================
+ЯЧЕЙКИ
+========================================================= */
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td{
+width:auto!important;
+min-width:0!important;
+margin:0!important;
+padding:2px!important;
+box-sizing:border-box!important;
+vertical-align:middle!important;
+line-height:16px!important;
+white-space:nowrap!important
+}
+
+/* =========================================================
+УСТРОЙСТВО
+========================================================= */
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(1){
+width:auto!important;
+min-width:0!important;
+white-space:nowrap!important;
+overflow:hidden!important;
+text-overflow:ellipsis!important
+}
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(1)>div{
+width:auto!important;
+min-width:0!important;
+max-width:100%!important;
+margin:0!important;
+padding:0!important;
+overflow:hidden!important
+}
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(1)>div>div{
+width:auto!important;
+min-width:0!important;
+max-width:100%!important;
+margin:0!important;
+padding:0!important;
+white-space:nowrap!important;
+overflow:hidden!important;
+text-overflow:ellipsis!important
+}
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(1) a{
+display:inline-block!important;
+max-width:100%!important;
+margin:0!important;
+padding:0!important;
+white-space:nowrap!important;
+overflow:hidden!important;
+text-overflow:ellipsis!important
+}
+
+/* =========================================================
+СТАТУС УСТРОЙСТВА
+========================================================= */
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(2){
+width:auto!important;
+min-width:0!important
+}
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(2)>p-dropdown{
+display:block!important;
+width:100%!important;
+min-width:0!important;
+margin:0!important;
+padding:0!important
+}
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(2)>p-dropdown>.p-dropdown{
+display:flex!important;
+align-items:center!important;
+width:100%!important;
+min-width:0!important;
+height:28px!important;
+margin:0!important;
+padding:0!important;
+box-sizing:border-box!important;
+border-radius:5px!important;
+box-shadow:none!important
+}
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(2)>p-dropdown>.p-dropdown>.p-dropdown-label{
+display:flex!important;
+align-items:center!important;
+flex:1 1 auto!important;
+min-width:0!important;
+height:26px!important;
+padding:0 3px!important;
+white-space:nowrap!important;
+overflow:hidden!important;
+text-overflow:ellipsis!important
+}
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(2)>p-dropdown>.p-dropdown>.p-dropdown-trigger{
+display:flex!important;
+align-items:center!important;
+justify-content:center!important;
+width:20px!important;
+min-width:20px!important;
+height:26px!important;
+flex:0 0 20px!important;
+margin:0!important;
+padding:0!important
+}
+
+/* =========================================================
+ДАТА
+========================================================= */
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(3){
+width:1%!important;
+min-width:0!important;
+white-space:nowrap!important
+}
+
+/* =========================================================
+ФИЛИАЛ
+========================================================= */
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(4){
+width:1%!important;
+min-width:0!important;
+white-space:nowrap!important
+}
+
+/* =========================================================
+ФИНАНСЫ
+========================================================= */
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(5),
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(6),
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(7),
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row>td:nth-child(8){
+width:1%!important;
+min-width:0!important;
+white-space:nowrap!important;
+text-align:left!important;
+letter-spacing:-.2px!important
+}
+
+/* =========================================================
+ВНУТРЕННИЕ ОТСТУПЫ
+========================================================= */
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row td>div,
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row td>div>div,
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row td a{
+margin-left:0!important;
+margin-right:0!important;
+padding-left:0!important;
+padding-right:0!important
+}
+
+.p-datatable table#pn_id_54-table tbody>tr.p-selectable-row.table-row td *{
+box-sizing:border-box!important
+}
+
+/* =========================================================
+ЛОКАЛЬНЫЙ DROPDOWN
+========================================================= */
+
+td:has(.gs-local-status-dropdown){
+vertical-align:middle!important
+}
+
+.gs-local-status-dropdown{
+display:block!important;
+width:100%!important;
+height:28px!important;
+min-height:28px!important;
+margin:1px 0 0!important;
+padding:0!important;
+box-sizing:border-box!important
+}
+
+.gs-local-status-dropdown .p-dropdown{
+display:flex!important;
+align-items:center!important;
+width:100%!important;
+height:28px!important;
+min-height:28px!important;
+margin:0!important;
+padding:0!important;
+box-sizing:border-box!important;
+background:#fff!important;
+border:1px solid #ced4da!important;
+border-radius:5px!important;
+box-shadow:none!important;
+overflow:hidden!important;
+cursor:pointer!important
+}
+
+.gs-local-status-dropdown .p-dropdown-label{
+display:flex!important;
+align-items:center!important;
+flex:1 1 auto!important;
+min-width:0!important;
+height:26px!important;
+margin:0!important;
+padding:0 4px!important;
+white-space:nowrap!important;
+overflow:hidden!important;
+text-overflow:ellipsis!important
+}
+
+.gs-local-status-dropdown .p-dropdown-trigger{
+display:flex!important;
+align-items:center!important;
+justify-content:center!important;
+width:20px!important;
+min-width:20px!important;
+height:26px!important;
+flex:0 0 20px!important;
+margin:0!important;
+padding:0!important;
+background:#fff!important;
+border:0!important
+}
+
+.gs-local-status-dropdown .p-dropdown-trigger-icon{
+display:flex!important;
+align-items:center!important;
+justify-content:center!important;
+margin:0!important;
+padding:0!important;
+line-height:1!important
+}
+
+.gs-local-status-dropdown .p-dropdown-trigger-icon i{
+display:block!important;
+margin:0!important;
+padding:0!important;
+font-size:10px!important;
+line-height:1!important
+}
+
+/* =========================================================
+ЛОКАЛЬНЫЙ СТАТУС
+========================================================= */
+
+.gs-local-status-label{
+display:flex!important;
+align-items:center!important;
+gap:0!important;
+width:100%!important;
+min-width:0!important;
+height:100%!important;
+margin:0!important;
+padding:0!important
+}
+
+.gs-local-status-tag{
+display:inline-flex!important;
+align-items:center!important;
+justify-content:center!important;
+max-width:100%!important;
+height:21px!important;
+min-height:21px!important;
+margin:0!important;
+padding:1px 5px!important;
+box-sizing:border-box!important;
+border-radius:11px!important;
+font-size:11px!important;
+font-weight:500!important;
+line-height:16px!important;
+white-space:nowrap!important;
+overflow:hidden!important;
+text-overflow:ellipsis!important
+}
+
+/* =========================================================
+OVERLAY
+========================================================= */
+
+.gs-local-status-overlay{
+position:fixed!important;
+z-index:2147483647!important;
+margin:0!important;
+padding:0!important;
+background:transparent!important
+}
+
+.gs-local-status-overlay .p-overlay-content{
+display:block!important;
+width:100%!important;
+margin:0!important;
+padding:0!important;
+background:transparent!important
+}
+
+.gs-local-status-panel{
+display:block!important;
+width:100%!important;
+min-width:100%!important;
+max-width:100%!important;
+margin:0!important;
+padding:0!important;
+box-sizing:border-box!important;
+background:#fff!important;
+border:1px solid #ced4da!important;
+border-radius:6px!important;
+box-shadow:0 2px 8px rgba(0,0,0,.12)!important;
+overflow:hidden!important
+}
+
+.gs-local-status-items-wrapper{
+display:block!important;
+width:100%!important;
+max-height:300px!important;
+margin:0!important;
+padding:0!important;
+overflow-x:hidden!important;
+overflow-y:auto!important;
+background:#fff!important
+}
+
+.gs-local-status-items{
+display:block!important;
+width:100%!important;
+margin:0!important;
+padding:4px 0!important;
+box-sizing:border-box!important;
+list-style:none!important;
+background:#fff!important
+}
+
+.gs-local-status-option{
+display:flex!important;
+align-items:center!important;
+width:100%!important;
+min-height:40px!important;
+margin:0!important;
+padding:6px 10px!important;
+box-sizing:border-box!important;
+background:#fff!important;
+border:0!important;
+color:#111827!important;
+font-size:13px!important;
+font-weight:500!important;
+line-height:1.2!important;
+cursor:pointer!important;
+user-select:none!important
+}
+
+.gs-local-status-option:hover,
+.gs-local-status-option.p-focus,
+.gs-local-status-option.p-highlight{
+background:#f3f4f6!important
+}
+
+.gs-local-status-reset{
+color:#6b7280!important;
+font-weight:400!important
+}
+
+/* =========================================================
+ВРЕМЯ
+========================================================= */
+
+.gs-local-status-time{
+display:none;
+position:absolute!important;
+left:0!important;
+top:36px!important;
+width:max-content!important;
+height:16px!important;
+margin:0!important;
+padding:0!important;
+font-size:12px!important;
+font-weight:500!important;
+line-height:16px!important;
+color:#000!important;
+white-space:nowrap!important;
+z-index:10!important
+}
+
+td:has(.gs-local-status-dropdown + app-td-many-items .item){
+padding-bottom:19px!important
+}
+
+td:has(.gs-local-status-dropdown + app-td-many-items .item)
+.gs-local-status-time{
+display:block!important
+}
+
+td:has(.gs-local-status-dropdown + app-td-many-items .item)
+app-td-many-items{
+display:block!important;
+margin:0!important;
+padding:0!important
+}
+
+td:has(.gs-local-status-dropdown + app-td-many-items .item)
+app-td-many-items .item{
+display:block!important;
+margin:17px 0 0!important;
+padding:0!important;
+line-height:16px!important
+}
+
+/* =========================================================
+ЗАГОЛОВКИ
+========================================================= */
+
+.p-datatable table#pn_id_54-table thead>tr>th{
+width:auto!important;
+min-width:0!important;
+margin:0!important;
+padding:2px!important;
+box-sizing:border-box!important;
+white-space:nowrap!important;
+overflow:hidden!important
+}
+
+/* =========================================================
+УБИРАЕМ ЗАЗОРЫ
+========================================================= */
+
+.p-datatable table#pn_id_54-table tbody>tr>td+td{
+border-left:0!important
+}
+
+.p-datatable table#pn_id_54-table tbody>tr>td:first-child{
+padding-left:1px!important
+}
+
+.p-datatable table#pn_id_54-table tbody>tr>td:last-child{
+padding-right:1px!important
+}
