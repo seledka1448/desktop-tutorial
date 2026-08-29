@@ -105,41 +105,20 @@ body {
 	text-align: center;
 }
 
-#rotate-device .rotate-card {
-	max-width: 19rem;
-}
-
+#rotate-device .rotate-card { max-width: 19rem; }
 #rotate-device .rotate-icon {
 	display: block;
 	margin: 0 auto 1.25rem;
 	font-size: 4rem;
 	animation: rotate-device-hint 1.8s ease-in-out infinite;
 }
-
-#rotate-device h1 {
-	margin: 0 0 0.75rem;
-	font-size: 1.45rem;
-}
-
-#rotate-device p {
-	margin: 0;
-	color: #b8c0dc;
-	font-size: 1rem;
-	line-height: 1.45;
-}
-
+#rotate-device h1 { margin: 0 0 0.75rem; font-size: 1.45rem; }
+#rotate-device p { margin: 0; color: #b8c0dc; font-size: 1rem; line-height: 1.45; }
 @keyframes rotate-device-hint {
 	0%, 100% { transform: rotate(0deg); }
 	50% { transform: rotate(90deg); }
 }
-
-@media (orientation: portrait) {
-	#rotate-device { display: flex; }
-}
-
-body.portrait-locked #rotate-device {
-	display: flex !important;
-}
+body.portrait-locked #rotate-device { display: flex !important; }
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
@@ -170,7 +149,7 @@ body.portrait-locked #rotate-device {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":4378556,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":4378108,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -182,13 +161,10 @@ const engine = new Engine(GODOT_CONFIG);
 
 	function updateOrientationGuard() {
 		const visibleViewport = window.visualViewport || window;
-		const visiblePortrait = visibleViewport.height > visibleViewport.width;
-		const viewportPortrait = window.innerHeight > window.innerWidth;
-		const portraitLocked = visiblePortrait || viewportPortrait;
+		const portraitLocked = visibleViewport.height > visibleViewport.width || window.innerHeight > window.innerWidth;
 		document.body.classList.toggle('portrait-locked', portraitLocked);
 		rotateDeviceOverlay.style.display = portraitLocked ? 'flex' : 'none';
 	}
-
 	window.addEventListener('resize', updateOrientationGuard, { passive: true });
 	window.addEventListener('orientationchange', updateOrientationGuard, { passive: true });
 	if (window.visualViewport) {
