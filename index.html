@@ -136,6 +136,10 @@ body {
 @media (orientation: portrait) {
 	#rotate-device { display: flex; }
 }
+
+body.portrait-locked #rotate-device {
+	display: flex !important;
+}
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
@@ -177,14 +181,22 @@ const engine = new Engine(GODOT_CONFIG);
 	const rotateDeviceOverlay = document.getElementById('rotate-device');
 
 	function updateOrientationGuard() {
+		const visibleViewport = window.visualViewport || window;
+		const visiblePortrait = visibleViewport.height > visibleViewport.width;
 		const physicalPortrait = window.screen && window.screen.height > window.screen.width;
 		const viewportPortrait = window.innerHeight > window.innerWidth;
-		rotateDeviceOverlay.style.display = physicalPortrait || viewportPortrait ? 'flex' : 'none';
+		const portraitLocked = visiblePortrait || physicalPortrait || viewportPortrait;
+		document.body.classList.toggle('portrait-locked', portraitLocked);
+		rotateDeviceOverlay.style.display = portraitLocked ? 'flex' : 'none';
 	}
 
 	window.addEventListener('resize', updateOrientationGuard, { passive: true });
 	window.addEventListener('orientationchange', updateOrientationGuard, { passive: true });
+	if (window.visualViewport) {
+		window.visualViewport.addEventListener('resize', updateOrientationGuard, { passive: true });
+	}
 	updateOrientationGuard();
+	setInterval(updateOrientationGuard, 250);
 
 	let initializing = true;
 	let statusMode = '';
