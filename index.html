@@ -183,9 +183,8 @@ const engine = new Engine(GODOT_CONFIG);
 	function updateOrientationGuard() {
 		const visibleViewport = window.visualViewport || window;
 		const visiblePortrait = visibleViewport.height > visibleViewport.width;
-		const physicalPortrait = window.screen && window.screen.height > window.screen.width;
 		const viewportPortrait = window.innerHeight > window.innerWidth;
-		const portraitLocked = visiblePortrait || physicalPortrait || viewportPortrait;
+		const portraitLocked = visiblePortrait || viewportPortrait;
 		document.body.classList.toggle('portrait-locked', portraitLocked);
 		rotateDeviceOverlay.style.display = portraitLocked ? 'flex' : 'none';
 	}
