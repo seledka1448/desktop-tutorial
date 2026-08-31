@@ -92,7 +92,7 @@ body {
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
-<style>@media (orientation:portrait){#canvas{visibility:hidden!important}body::after{content:"↻  ПОВЕРНИТЕ ТЕЛЕФОН\A\AИгра работает только\Aв горизонтальном режиме";white-space:pre;position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;text-align:center;padding:32px;box-sizing:border-box;background:#101722;color:#fff2bd;font:700 24px/1.35 -apple-system,BlinkMacSystemFont,Arial,sans-serif;letter-spacing:.3px}}@media (orientation:landscape){body::after{display:none}}</style>
+<style>#orientation-lock{position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;text-align:center;padding:32px;box-sizing:border-box;background:#101722;color:#fff2bd;font:700 24px/1.35 -apple-system,BlinkMacSystemFont,Arial,sans-serif;letter-spacing:.3px;white-space:pre}</style><script>(function(){function install(){var canvas=document.getElementById('canvas');if(!canvas)return;var notice=document.getElementById('orientation-lock');if(!notice){notice=document.createElement('div');notice.id='orientation-lock';notice.innerHTML='↻  ПОВЕРНИТЕ ТЕЛЕФОН<br><br>Игра работает только<br>в горизонтальном режиме';document.body.appendChild(notice);}function update(){var portrait;if(typeof window.orientation==='number'){portrait=Math.abs(window.orientation)%180===0;}else if(window.visualViewport){portrait=window.visualViewport.height>window.visualViewport.width;}else{portrait=window.innerHeight>window.innerWidth;}notice.style.display=portrait?'flex':'none';canvas.style.visibility=portrait?'hidden':'visible';}window.addEventListener('orientationchange',function(){setTimeout(update,150);});window.addEventListener('resize',update);if(window.visualViewport)window.visualViewport.addEventListener('resize',update);update();setInterval(update,500);}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install);else install();})();</script>
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -111,7 +111,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","mainPack":"game-css-orientation.pck","experimentalVK":false,"fileSizes":{"game-css-orientation.pck":5822444,"index.pck":5822444,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"game-ios-orientation-js.pck":5822444,"index.pck":5822444,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"mainPack":"game-ios-orientation-js.pck"};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
